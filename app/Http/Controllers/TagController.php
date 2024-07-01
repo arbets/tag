@@ -11,4 +11,9 @@ class TagController extends Controller
         Tag::create($request->all());
         return redirect('/');
     }
+
+    public function delete(Tag $tag){
+        $tag->delete();
+        return redirect('/');
+    }
 }
