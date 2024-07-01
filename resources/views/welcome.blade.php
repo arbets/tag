@@ -21,6 +21,9 @@
                         <td class="border px-4 py-2">
                             {{ $tag->name }}
                         </td>
+                        <td class="border px-4 py-2">
+                            {{ $tag->slug }}
+                        </td>
                         <td class="px-4 py-2">
                             <form action="tags/{{ $tag->id }}" method="post">
                                 @csrf
